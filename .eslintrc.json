@@ -1,0 +1,29 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "import"],
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "overrides": [
+    {
+      "env": {
+        "jest": true
+      },
+      "files": ["__tests__/**"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/all"],
+      "rules": { "jest/prefer-expect-assertions": "off" }
+    }
+  ],
+  "rules": {
+    "quotes": ["error", "single"],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": { "order": "asc" },
+        "groups": [["builtin", "external"], "internal", ["parent", "sibling"], "index"]
+      }
+    ]
+  }
+}

@@ -1,5 +1,0 @@
-export { default as string } from './string'
-export { default as boolean } from './boolean'
-export { default as array } from './array'
-export { default as period } from './period'
-export { default as self } from './self'

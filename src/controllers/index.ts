@@ -1,0 +1,5 @@
+export { default as UsersController } from './users.controllers'
+export { default as ShowsController } from './shows.controllers'
+export { default as SeasonsController } from './seasons.controllers'
+export { default as EpisodesController } from './episodes.controllers'
+export { default as WatchedController } from './watched.controllers'
